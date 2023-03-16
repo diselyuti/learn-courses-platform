@@ -17,6 +17,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.12",
     "@heroicons/vue": "^2.0.16",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "axios": "^1.3.4",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.32",

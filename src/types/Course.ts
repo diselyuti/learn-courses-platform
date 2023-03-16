@@ -1,6 +1,6 @@
 import type {CourseMeta} from "@/types/CourseMeta";
 
-interface Course {
+export interface Course {
 	id: string;
 	title: string;
 	tags: string[];

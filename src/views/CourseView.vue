@@ -1,6 +1,5 @@
 <template>
     <content-layout>
-        aboba
     </content-layout>
 </template>
 
