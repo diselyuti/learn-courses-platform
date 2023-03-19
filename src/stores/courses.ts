@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type {Course} from "@/types";
+import type {Course, Lesson} from "@/types";
 import api from "@/api";
 import {API_COURSES_PREVIEW, PAGINATION_PAGE_SIZE} from "@/constants";
 
@@ -78,6 +78,14 @@ export const useCoursesStore = defineStore('courses', {
 		paginatedCourses(): Course[] {
 			// return courses from the current page
 			return this.courses.slice((this.pageNumber - 1) * 10, this.pageNumber * 10)
+		},
+		orderedLessons(): Lesson[] {
+			if (!this.course || !this.course.lessons) {
+				return [];
+			}
+			return this.course.lessons.sort((a, b) => {
+				return a.order - b.order;
+			})
 		}
 	},
 	persist: {

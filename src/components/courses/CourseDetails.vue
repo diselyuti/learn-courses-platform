@@ -42,8 +42,8 @@
 
             <!-- Course video -->
             <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center" v-show="courseStore.course.meta.courseVideoPreview">
-                <div class="rounded-md aspect-w-16 aspect-h-9 overflow-hidden rounded-lg">
-                    <video-player-hls :src="courseStore.course.meta.courseVideoPreview.link" />
+                <div class="overflow-hidden rounded-lg">
+                    <video-player-hls :src="courseStore.course.meta?.courseVideoPreview?.link" :autoplay="true" :muted="true" :loop="true"/>
                 </div>
             </div>
         </div>

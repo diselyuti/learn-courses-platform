@@ -1,4 +1,5 @@
 import type {CourseMeta} from "@/types/CourseMeta";
+import type {Lesson} from "@/types/Lesson";
 
 export interface Course {
 	id: string;
@@ -13,4 +14,5 @@ export interface Course {
 	previewImageLink: string;
 	rating: number;
 	meta: CourseMeta;
+	lessons?: Lesson[];
 }

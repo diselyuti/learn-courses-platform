@@ -7,7 +7,7 @@
                         <div class="flex h-16 items-center justify-between px-4 sm:px-0">
                             <div class="flex items-center">
                                 <div class="flex-shrink-0">
-                                    <img class="h-8 w-8 rounded-full" src="https://loremflickr.com/320/240" alt="kitty" />
+                                    <h1 class="text-white text-2xl">Learn Something New</h1>
                                 </div>
                                 <div class="hidden md:block">
                                     <div class="ml-10 flex items-baseline space-x-4">

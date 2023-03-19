@@ -6,6 +6,7 @@ export interface Lesson {
 	type: string;
 	status: string;
 	link: string;
+	currentTime?: number;
 	previewImageLink: string;
 	meta: null;
 }
