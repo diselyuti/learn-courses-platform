@@ -1,5 +1,4 @@
 import { describe, it, expect } from 'vitest'
-
 import {mount, shallowMount} from '@vue/test-utils'
 import CoursePreview from "../courses/CoursePreview.vue";
 import {PREVIEW_IMAGE_LINK_POSTFIX_COURSE} from "../../constants";

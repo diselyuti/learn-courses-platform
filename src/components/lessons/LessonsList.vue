@@ -4,9 +4,9 @@
             <div class="mx-auto divide-y divide-gray-900/10">
                 <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Lessons</h2>
                 <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
-                    <Disclosure as="div" v-for="lesson in coursesStore.orderedLessons" :key="lesson.id" class="pt-6" v-slot="{ open }">
+                    <Disclosure as="div" v-for="lesson in coursesStore.orderedLessons" :key="lesson.id" class="pt-6" v-slot="{ open }" id="lesson">
                         <dt>
-                            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-900">
+                            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-900" id="lesson-title">
                                 <h2 class="text-xs font-semibold leading-7 flex sm:text-base">
                                     <span class="mr-2">Lesson {{ lesson.order }}.</span>
                                     {{ lesson.title }}
@@ -21,7 +21,7 @@
                             </DisclosureButton>
                         </dt>
                         <DisclosurePanel as="dd" class="mt-5" v-if="lesson.status !== 'locked'">
-                            <video-player-hls :src="lesson.link" :video-id="lesson.id"/>
+                            <video-player-hls :src="lesson.link" :video-id="lesson.id" id="video"/>
                         </DisclosurePanel>
                     </Disclosure>
                 </dl>
