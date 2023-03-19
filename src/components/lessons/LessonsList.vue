@@ -36,7 +36,6 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { MinusSmallIcon, PlusSmallIcon, LockClosedIcon } from '@heroicons/vue/24/outline'
 import {useCoursesStore} from "@/stores";
 import VideoPlayerHls from "@/components/video/VideoPlayerHls.vue";
-import {computed} from "vue";
 
 const coursesStore = useCoursesStore();
 </script>

@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import { Course } from "@/types";
-import {onMounted, ref} from "vue";
+import {ref} from "vue";
 import {PREVIEW_IMAGE_LINK_POSTFIX_COURSE} from "@/constants";
 import VideoPlayerHls from "@/components/video/VideoPlayerHls.vue";
 

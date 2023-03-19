@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
 import VideoPlayerHls from "../video/VideoPlayerHls.vue";
-import {describe, it, expect, vi, beforeEach} from 'vitest'
+import {describe, it, expect, beforeEach} from 'vitest'
 import {useSettingsStore} from "@/stores";
 import {createPinia, setActivePinia} from "pinia";
 
@@ -42,7 +42,6 @@ describe('VideoPlayer', () => {
 		});
 
 		const video = wrapper.find('video').element;
-		const settingsStore = wrapper.vm.settingsStore;
 
 		expect(video.playbackRate).toBe(settingsStore.playbackRate);
 	});

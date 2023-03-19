@@ -16,8 +16,13 @@
                 <div class="animate-spin rounded-full h-10 w-10 border-b-2 border-gray-900"></div>
             </div>
         </div>
-        <button class="absolute top-3 left-3 bg-white rounded-full p-3" v-if="controls" id="pip-button">
-            <ArrowDownRightIcon class="h-3 w-3 text-gray-900" @click="onEnterPiP"/>
+        <button
+            class="absolute top-3 left-3 bg-white rounded-full p-3"
+            v-if="controls"
+            id="pip-button"
+            @click="onEnterPiP"
+        >
+            <ArrowDownRightIcon class="h-3 w-3 text-gray-900"/>
         </button>
         <div class="group absolute top-3 left-16 bg-white rounded-full p-3 flex text-gray-900 text-xs" v-if="controls">
             <div class="h-3">{{ settingsStore.playbackRate }}x</div>
@@ -30,7 +35,7 @@
 import {ref, onMounted, onBeforeUnmount} from 'vue';
 import Hls from 'hls.js/dist/hls.min';
 import {ArrowDownRightIcon} from "@heroicons/vue/24/solid";
-import {useSettingsStore} from "@/stores/settings";
+import {useSettingsStore} from "@/stores";
 
 const props = defineProps({
     src: {

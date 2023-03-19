@@ -7,7 +7,7 @@
                         <div class="flex h-16 items-center justify-between px-4 sm:px-0">
                             <div class="flex items-center">
                                 <div class="flex-shrink-0">
-                                    <h1 class="text-white text-2xl">Learn Something New</h1>
+                                    <router-link to="/" class="text-white text-2xl">Learn Something New</router-link>
                                 </div>
                                 <div class="hidden md:block">
                                     <div class="ml-10 flex items-baseline space-x-4">
@@ -49,8 +49,8 @@
 </template>
 
 <script setup>
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 const navigation = [
     { name: 'Courses', href: '/' },
 ]

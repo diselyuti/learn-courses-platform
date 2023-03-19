@@ -28,7 +28,6 @@ const coursesStore = useCoursesStore();
 onMounted(async () => {
     const courseSlug = route.params.slug as string;
     await coursesStore.fetchCourse(courseSlug);
-    console.log(coursesStore.course)
 });
 </script>
 

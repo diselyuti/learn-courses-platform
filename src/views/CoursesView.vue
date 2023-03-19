@@ -26,7 +26,6 @@
 <script setup lang="ts">
 import ContentLayout from "@/layouts/ContentLayout.vue";
 import {
-    ref,
     onMounted,
 } from "vue";
 import CoursePreview from "@/components/courses/CoursePreview.vue";

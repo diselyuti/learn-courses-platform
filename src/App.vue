@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import Default from "@/layouts/default.vue";
+import { RouterView } from 'vue-router'
+import Default from "@/layouts/DefaultLayout.vue";
 </script>
 
 <template>
